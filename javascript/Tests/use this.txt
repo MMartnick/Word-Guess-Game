@@ -1,0 +1,5 @@
+if (questionIndex === questions.length) {
+return;
+}
+
+///^ use for end game

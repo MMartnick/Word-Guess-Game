@@ -1,0 +1,358 @@
+body {
+    font-family:  'Gugi', cursive;
+    font-size: 16px;
+    background-image: url(../images/Tetris2.png);
+    background-repeat: repeat;
+}
+
+.container {
+    width: 960px;
+    margin: auto;
+}
+
+header {
+    height: 120px;
+    border: 3px solid black;
+    border-radius: 30px;
+    width: 300px;
+    text-align: center;
+    margin: auto;
+    margin-left: -100px;
+    margin-top: 50px; 
+    float: left;
+    transform: rotate(-10deg);
+    background-color: rgba(203, 228, 183, 0.671);
+    
+}
+
+h1 {
+    font-size: 4em;
+    text-shadow: 8px 2px 2px rgba(243, 42, 86, 0.79);
+}
+
+h3 {
+    font-size: 3em;
+    text-shadow: 8px 2px 2px rgba(243,42,86, 0.79);
+}
+
+.blanks {
+    position: absolute;
+    font-size: 1em;
+    text-align: center;
+    margin: auto;
+    height: 100px;
+    width: 204px; 
+    padding-top: 50px;
+    opacity: .77;
+}
+
+.rightGuess {
+    position: absolute;
+    border: 3px solid black;
+    border-radius: 30px;
+    background-color: rgba(203, 228, 183, 0.671);
+    font-size: 1.3em;
+    text-align: center;
+    margin-left:750px; 
+    margin-top: 30px;
+    height: 100px;
+    width: 200px; 
+    padding-top: 20px;
+    float: right;
+    transform: rotate(5deg);
+}
+
+.wrongAnswers {
+    position: absolute;
+    border: 3px solid black;
+    border-radius: 30px;
+    background-color: rgba(203, 228, 183, 0.671);
+    font-size: 1.3em;
+    text-align: center;
+    margin-left:750px; 
+    margin-top: 200px;
+    height: 100px;
+    width: 200px; 
+    padding-top: 20px;
+    transform: rotate( -3deg);
+}
+
+
+/* Gameboy */
+
+
+.mainCont {
+    border: 3px solid rgb(150, 148, 148);
+    background: rgb(150,148,148);
+    background: linear-gradient(60deg, rgba(150,148,148,1) 0%, rgba(216,216,216,1) 35%);
+    font-size: 1.3em;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    height: 592px;
+    width: 360px; 
+    padding-top: 20px;
+    border-radius: 20px;
+    border-bottom-right-radius: 100px;
+    
+}
+
+.line {
+    height: 4px;
+    width: 100%;
+    background: rgb(163, 162, 162);
+}
+
+.screenBorder {
+    border: 3px solid rgb(99, 96, 96);
+    background: rgb(99,96,96);
+    background: linear-gradient(60deg, rgba(99,96,96,1) 0%, rgba(145,145,145,1) 35%);
+    font-size: 1.3em;
+    text-align: center;
+    margin: auto;
+    margin-top: 24px;
+    height: 240px;
+    width: 300px; 
+    padding-top: 20px;
+    border-radius: 5px;
+    border-bottom-right-radius: 50px;
+}
+
+.light{
+    position: absolute;
+    border: 3px solid rgb(141, 71, 92);
+    background: linear-gradient(60deg, rgb(156, 69, 95) 0%, rgba(243,42,86,1) 35%);
+    margin: auto;
+    height: 8px; 
+    width: 8px;
+    border-radius: 1000px;
+    margin-top: 70px;
+    margin-left: 15px;  
+}
+
+.screen {
+    border: 3px solid rgb(93, 110, 86);
+    background-color: rgb(149, 187, 100);
+    font-size: 1.3em;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    height: 172px;
+    width: 210px; 
+    padding-top: 20px;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.buttonOne{
+    border: 3px solid rgb(141, 71, 92);
+    background: linear-gradient(60deg, rgb(156, 69, 95) 0%, rgba(243,42,86,1) 35%);
+    margin: auto;
+    height: 40px; 
+    width: 40px;
+    border-radius: 1000px;
+    margin-top: 40px;
+    margin-left: 280px;  
+}
+
+.buttonTwo{
+    border: 3px solid rgb(141, 71, 92);
+    background: linear-gradient(60deg, rgb(156, 69, 95) 0%, rgba(243,42,86,1) 35%);
+    margin: auto;
+    height: 40px; 
+    width: 40px;
+    border-radius: 1000px;
+    margin-top: -20px;
+    margin-left: 220px;  
+}
+
+
+/* DPad */
+
+
+.dCenter{
+    position: absolute;
+    background-color: rgb(50,48,54,1);
+    margin: auto;
+    height: 37px; 
+    width: 37px;
+    margin-top: -25px;
+    margin-left: 70px;
+  
+}
+
+.dUp{
+    position: absolute;
+    border-left: 3px solid rgb(99, 96, 96);
+    border-right: 3px solid rgb(99, 96, 96);
+    border-top: 3px solid rgb(99, 96, 96);
+    background-color: rgb(50,48,54,1);
+    margin: auto;
+    height: 30px; 
+    width: 30px;
+    border-radius: 5px;
+    margin-top: -58px;
+    margin-left: 70px;  
+}
+
+.dLeft{
+    position: absolute;
+    border-bottom: 3px solid rgb(99, 96, 96);
+    border-right: 3px solid rgb(99, 96, 96);
+    border-top: 3px solid rgb(99, 96, 96);
+    background: rgb(50,48,54,1);
+    margin: auto;
+    height: 30px; 
+    width: 30px;
+    border-radius: 5px;
+    margin-top: -25px;
+    margin-left: 106px;  
+}
+
+.dRight{
+    position: absolute;
+    border-bottom: 3px solid rgb(99, 96, 96);
+    border-left: 3px solid rgb(99, 96, 96);
+    border-top: 3px solid rgb(99, 96, 96);
+    background: rgb(0,0,0);
+    background: linear-gradient(33deg, rgba(0,0,0,1) 0%, rgba(50,48,54,1) 35%);
+    margin: auto;
+    height: 30px; 
+    width: 30px;
+    border-radius: 5px;
+    margin-top: -25px;
+    margin-left: 37px;  
+}
+
+.dDown{
+    position: absolute;
+    border-bottom: 3px solid rgb(99, 96, 96);
+    border-right: 3px solid rgb(99, 96, 96);
+    border-left: 3px solid rgb(99, 96, 96);
+    background: rgb(0,0,0);
+    background: linear-gradient(33deg, rgba(0,0,0,1) 0%, rgba(50,48,54,1) 35%);
+    margin: auto;
+    height: 30px; 
+    width: 30px;
+    border-radius: 5px;
+    margin-top: 11px;
+    margin-left: 70px;  
+}
+
+
+/* Start/Select */
+
+
+.start {
+    position: absolute;
+    height: 9px;
+    width: 39px;
+    border: 2px solid rgb(99, 96, 96);
+    background: rgb(0,0,0);
+    background: linear-gradient(33deg, rgba(0,0,0,1) 0%, rgba(50,48,54,1) 35%);
+    margin-left: 130px;
+    margin-top: 50px;
+    border-radius: 20px;
+    transform: rotate(-30deg);
+}
+
+.select {
+    position: absolute;
+    height: 9px;
+    width: 39px;
+    border: 2px solid rgb(99, 96, 96);
+    background: rgb(0,0,0);
+    background: linear-gradient(33deg, rgba(0,0,0,1) 0%, rgba(50,48,54,1) 35%);
+    margin-left: 180px;
+    margin-top: 50px;
+    border-radius: 20px;
+    transform: rotate(-30deg);
+}
+
+
+/* Speakers */
+
+
+.spOne {
+    position: absolute;
+    height: 5px;
+    width: 64px;
+    border: 2px solid rgb(99, 96, 96);
+    background: rgb(170, 167, 167);
+    background: linear-gradient(33deg, rgba(0,0,0,1) 0%, rgb(100, 98, 102) 35%);
+    margin-left: 280px;
+    margin-top: 90px;
+    border-radius: 20px;
+    transform: rotate(42deg);
+    opacity: .65;
+}
+
+.spTwo {
+    position: absolute;
+    height: 5px;
+    width: 64px;
+    border: 2px solid rgb(99, 96, 96);
+    background: rgb(170, 167, 167);
+    background: linear-gradient(33deg, rgba(0,0,0,1) 0%, rgb(100, 98, 102) 35%);
+    margin-left: 270px;
+    margin-top: 100px;
+    border-radius: 20px;
+    transform: rotate(42deg);
+    opacity: .65;
+}
+
+.spThree {
+    position: absolute;
+    height: 5px;
+    width: 64px;
+    border: 2px solid rgb(99, 96, 96);
+    background: rgb(170, 167, 167);
+    background: linear-gradient(33deg, rgba(0,0,0,1) 0%, rgb(100, 98, 102) 35%);
+    margin-left: 260px;
+    margin-top: 110px;
+    border-radius: 20px;
+    transform: rotate(42deg);
+    opacity: .65;
+}
+
+.spFour {
+    position: absolute;
+    height: 5px;
+    width: 64px;
+    border: 2px solid rgb(99, 96, 96);
+    background: rgb(170, 167, 167);
+    background: linear-gradient(33deg, rgba(0,0,0,1) 0%, rgb(100, 98, 102) 35%);
+    margin-left: 250px;
+    margin-top: 120px;
+    border-radius: 20px;
+    transform: rotate(42deg);
+    opacity: .65;
+}
+
+.spFive {
+    position: absolute;
+    height: 5px;
+    width: 64px;
+    border: 2px solid rgb(99, 96, 96);
+    background: rgb(170, 167, 167);
+    background: linear-gradient(33deg, rgba(0,0,0,1) 0%, rgb(100, 98, 102) 35%);
+    margin-left: 240px;
+    margin-top: 130px;
+    border-radius: 20px;
+    transform: rotate(42deg);
+    opacity: .65;
+}
+
+.spSix {
+    position: absolute;
+    height: 5px;
+    width: 64px;
+    border: 2px solid rgb(99, 96, 96);
+    background: rgb(170, 167, 167);
+    background: linear-gradient(33deg, rgba(0,0,0,1) 0%, rgb(100, 98, 102) 35%);
+    margin-left: 230px;
+    margin-top: 140px;
+    border-radius: 20px;
+    transform: rotate(42deg);
+    opacity: .65;
+}
